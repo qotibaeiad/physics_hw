@@ -4,9 +4,11 @@ import numpy as np
 #input q#
 qn=int(input())
 
-# your code
+
 A="maagal"  #example
-B=""
+B="heberbola"
+
+
 
 #output
 if qn==1:
