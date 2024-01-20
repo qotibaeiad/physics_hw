@@ -20,13 +20,13 @@ outputunit = float(input('output ubit 1-3'))
 
 if(unit==1 and outputunit==2):
     print("the speed:- "+OneToTwo(v))
-if(unit==1 and outputunit==3):
+elif(unit==1 and outputunit==3):
     print("the speed:- "+OneToThree(v))
-if(unit==2 and outputunit==1):
+elif(unit==2 and outputunit==1):
     print("the speed:- "+TwoToOne(v))
-if(unit==2 and outputunit==3):
+elif(unit==2 and outputunit==3):
     print("the speed:- "+TwoTaoThree(v))
-if(unit==3 and outputunit==1):
+elif(unit==3 and outputunit==1):
     print("the speed:- "+ThreeToOne(v))
-if(unit==3 and outputunit==2):
+elif(unit==3 and outputunit==2):
     print("the speed:- "+ThreeToTwo(v))
