@@ -3,7 +3,6 @@ import matplotlib.patches as mpatches
 import numpy as np
 
 def draw_vector_difference(x1, y1, x2, y2):
-    # Vector subtraction
     x_diff = x1 - x2
     y_diff = y1 - y2
 
@@ -26,9 +25,8 @@ def draw_vector_difference(x1, y1, x2, y2):
 
     angle_radians = np.arccos(dot_product / (length1 * length2))
     angle_degrees = np.degrees(angle_radians)
-    print('the degrees: ', angle_degrees)
+    print('the degrees of two victor: ', angle_degrees)
 
-    # Determine starting point for the arrow difference
     if y1 < y2:
         startx = x1
         starty = y1
@@ -37,14 +35,14 @@ def draw_vector_difference(x1, y1, x2, y2):
         starty = y2
 
     arw_diff = mpatches.Arrow(startx, starty, x_diff, y_diff, width=0.4, color='y', label='Vector Difference')
+    degree_diff_with_axisy=np.degrees(np.arctan(x_diff/y_diff))
+    print('the diff degree: ',degree_diff_with_axisy)
 
-    # Calculate the endpoints of the vectors for the parallelogram
     endx1 = startx + x1
     endy1 = starty + y1
     endx2 = startx + x2
     endy2 = starty + y2
 
-    # Draw the parallelogram
     par1 = mpatches.Arrow(startx, starty, x1, y1, width=0.4, color='r', label='Parallelogram 1')
     par2 = mpatches.Arrow(startx, starty, x2, y2, width=0.4, color='r', label='Parallelogram 2')
 
