@@ -6,8 +6,9 @@ qn = int(input())
 
 # your code
 A = "maagal"  # example
-B = "heberbola"
-
+B = "heb"
+plt.xlim(-2,2)
+plt.ylim(-2,2)
 if qn == 1:
     theta = np.linspace(0, 2 * np.pi, 1000)
     x = np.cos(theta)

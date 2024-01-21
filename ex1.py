@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.signal import argrelextrema
 
 #input
 A=float(input("A:"))
@@ -18,7 +19,8 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
 plt.grid(True)
-plt.show()
+maxima_indices = argrelextrema(y, np.greater)
+max_no = len(maxima_indices[0])
 ##########
 #output
 if qn==1: 
@@ -26,4 +28,5 @@ if qn==1:
 elif qn==2: 
     print(f'{D:.5g}')
 elif qn==3:
-    print(max_no)
+     print(max_no)
+     plt.show()
