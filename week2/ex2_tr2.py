@@ -19,7 +19,7 @@ elif qn == 2:
     print(fdot[:9])
 elif qn == 3:
     print(fdot2[:9])
-    
+
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()

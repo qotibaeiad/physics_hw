@@ -11,7 +11,6 @@ E=np.cumsum(D)
 x=np.arange(0.0, 6.29, 0.01)
 f=np.power(np.sin(x),2.0)
 I=np.sum(np.power(np.sin(x),2.0) * 0.01)
-
 range=np.arange(0,6.28,0.01)
 w=np.sin(range)
 F=f**2
@@ -31,4 +30,5 @@ elif qn==6:
 elif qn==7:
     print(I)
 elif qn==8:
-    print(F)
+    x=np.arange(0.0,6.28,0.01)
+    y = np.power(np.sin(x),2.0)
