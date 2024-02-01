@@ -1,5 +1,6 @@
 #imports
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 # input 
@@ -23,8 +24,8 @@ vy = np.cumsum(ay) * t_step + v0y
 x = np.cumsum(vx) * t_step
 y = np.cumsum(vy) * t_step
 
-
 vertical_offset = (t[-1] + t_step) * v0x
+
 
 ##
 
